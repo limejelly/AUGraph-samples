@@ -22,6 +22,10 @@
 		22CF6845180EBB1A00A60866 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CF6824180EBB1A00A60866 /* UIKit.framework */; };
 		22CF684D180EBB1A00A60866 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22CF684B180EBB1A00A60866 /* InfoPlist.strings */; };
 		22CF684F180EBB1A00A60866 /* Sample1_FilePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CF684E180EBB1A00A60866 /* Sample1_FilePlayerTests.m */; };
+		22CF685A180EBBBA00A60866 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CF6859180EBBBA00A60866 /* Graph.m */; };
+		22CF685E180EBBCA00A60866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CF685B180EBBCA00A60866 /* AudioToolbox.framework */; };
+		22CF6860180EBBCA00A60866 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CF685D180EBBCA00A60866 /* CoreAudio.framework */; };
+		22CF6862180EC36400A60866 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22CF6861180EC36400A60866 /* sound.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,12 @@
 		22CF684A180EBB1A00A60866 /* Sample1_FilePlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sample1_FilePlayerTests-Info.plist"; sourceTree = "<group>"; };
 		22CF684C180EBB1A00A60866 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22CF684E180EBB1A00A60866 /* Sample1_FilePlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sample1_FilePlayerTests.m; sourceTree = "<group>"; };
+		22CF6858180EBBBA00A60866 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		22CF6859180EBBBA00A60866 /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		22CF685B180EBBCA00A60866 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		22CF685C180EBBCA00A60866 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		22CF685D180EBBCA00A60866 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		22CF6861180EC36400A60866 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CF685E180EBBCA00A60866 /* AudioToolbox.framework in Frameworks */,
+				22CF6860180EBBCA00A60866 /* CoreAudio.framework in Frameworks */,
 				22CF6823180EBB1A00A60866 /* CoreGraphics.framework in Frameworks */,
 				22CF6825180EBB1A00A60866 /* UIKit.framework in Frameworks */,
 				22CF6821180EBB1A00A60866 /* Foundation.framework in Frameworks */,
@@ -103,6 +115,9 @@
 		22CF681F180EBB1A00A60866 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22CF685B180EBBCA00A60866 /* AudioToolbox.framework */,
+				22CF685C180EBBCA00A60866 /* AudioUnit.framework */,
+				22CF685D180EBBCA00A60866 /* CoreAudio.framework */,
 				22CF6820180EBB1A00A60866 /* Foundation.framework */,
 				22CF6822180EBB1A00A60866 /* CoreGraphics.framework */,
 				22CF6824180EBB1A00A60866 /* UIKit.framework */,
@@ -114,6 +129,8 @@
 		22CF6826180EBB1A00A60866 /* Sample1_FilePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				22CF6858180EBBBA00A60866 /* Graph.h */,
+				22CF6859180EBBBA00A60866 /* Graph.m */,
 				22CF682F180EBB1A00A60866 /* AppDelegate.h */,
 				22CF6830180EBB1A00A60866 /* AppDelegate.m */,
 				22CF6832180EBB1A00A60866 /* Main_iPhone.storyboard */,
@@ -129,6 +146,7 @@
 		22CF6827180EBB1A00A60866 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22CF6861180EC36400A60866 /* sound.caf */,
 				22CF6828180EBB1A00A60866 /* Sample1_FilePlayer-Info.plist */,
 				22CF6829180EBB1A00A60866 /* InfoPlist.strings */,
 				22CF682C180EBB1A00A60866 /* main.m */,
@@ -233,6 +251,7 @@
 			files = (
 				22CF6837180EBB1A00A60866 /* Main_iPad.storyboard in Resources */,
 				22CF683C180EBB1A00A60866 /* Images.xcassets in Resources */,
+				22CF6862180EC36400A60866 /* sound.caf in Resources */,
 				22CF6834180EBB1A00A60866 /* Main_iPhone.storyboard in Resources */,
 				22CF682B180EBB1A00A60866 /* InfoPlist.strings in Resources */,
 			);
@@ -253,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CF685A180EBBBA00A60866 /* Graph.m in Sources */,
 				22CF683A180EBB1A00A60866 /* ViewController.m in Sources */,
 				22CF6831180EBB1A00A60866 /* AppDelegate.m in Sources */,
 				22CF682D180EBB1A00A60866 /* main.m in Sources */,
